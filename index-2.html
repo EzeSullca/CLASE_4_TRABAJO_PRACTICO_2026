@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultorio Médico</title>
+    <title>Empanadas</title>
+    <meta name="desc" content="Tutorial para hacer empanadas">
 </head>
 <body>
-    <header><h1>Centro de Turnos Médicos Online</h1></header>
-    <div>
+    <!--HTML:
+             - Etiquetas semanticas
+             - Navegacion (con jerarquia)
+             - Formularios
+    -->
+    <header
+        style="background-color: red"
+    ><!--El atributo style es un atributo global para dar estilos a un cierto elemento-->
+        <img src="paulina-cocina-logo.svg" alt="Logo de paulina cocina" width="300px">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Recetas</a>
+                    <ul>
+                        <li>
+                            <a href="">Bebidas y cocktails</a>
+                        </li>
+                        <li>
+                            <a href="">Arroces</a>
+                        </li>
+                        <li>
+                            <a href="">Ensaladas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Reecetas dulces</a>
+                    <a href="">Mas recetas</a>
+                    <a href="">Videos</a>
+                    <a href="">Tienda</a>
+                </li>
+        </nav>    
+    </header>
+    <aside>
+
+    </aside>
+    <main>
+        <section>
+            <h1>Cómo hacer las mejores empanadas</h1>
+     <div>
+        <h2>Ingredientes (para 1kg o 16 unidades)</h2>
         <ul>
-            <li>
-                <label>Nombre y apellido:</label>
-                <input type="text" name="username">
-            </li>
-            <li>
-                <label>Correo electrónico:</label>
-                <input type="email" name="email" placeholder="example@gmail.com">
-            </li>
-            <li>
-                <label>Tipo de documento:</label>
-                <select name="doctype" id="doctype">
-                    <option value="Documento Nacional de Identidad">Documento Nacional de Identidad</option>
-                    <option value="Docunento de Nacionalidad Extranjera">Documento de Nacionalidad Extranjera</option>
-                    <option value="Documento Pasaporte">Documento Pasaporte</option>
-                    <option value="Documento en trámite">Documento en trámite</option>
-                </select>           
-            </li>
-            <li>
-                <label>Posee obra social:</label>
-                <select name="social-work" id="social-work">
-                    <option value="yes">Si</option>
-                    <option value="no">No</option>
-                </select>
-            </li>
-            <li>
-                <label>Seleccione turno:</label>     
-                <select id="select-shitf">
-                    <option value="Consulta Oftanmólogo">Consulta Oftanmólogo</option>
-                    <option value="Consulta Pediátra">Consulta Pediátra</option>
-                    <option value="Consulta Opstetra">Consulta Opstetra</option>
-                </select> 
-            </li>
-            <li>
-                <label>Seleccione fecha de turno:</label>
-                <input type="date" name="date">
-            </li>    
+            <li>Harina</li>
+            <li>Carne molida</li>
+            <li>Cebolla</li>
         </ul>
-        <button type="submit">Solicitar turno</button>
-        <section id="ubication">
-            <h2>Nuestra ubicación:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.446257565863!2d-68.69189367987919!3d-32.99200833592921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e6d37b5afd359%3A0x2062155b95601b2b!2sCONSULTORIOS%20DON%20BOSCO!5e0!3m2!1ses!2sar!4v1788013504923!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+     </div>
+     <span>10.000$<span>/mes</span></span>
+     <p>Crea hasta <strong>50</strong> páginas web.</p>
         </section>
-    </div>
+     
+    </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
