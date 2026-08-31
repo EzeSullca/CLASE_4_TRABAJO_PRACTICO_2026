@@ -1,56 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultorio Médico</title>
+    <title>My feedback form</title>
 </head>
 <body>
-    <header><h1>Centro de Turnos Médicos Online</h1></header>
-    <div>
-        <ul>
-            <li>
-                <label>Nombre y apellido:</label>
-                <input type="text" name="username">
-            </li>
-            <li>
-                <label>Correo electrónico:</label>
-                <input type="email" name="email" placeholder="example@gmail.com">
-            </li>
-            <li>
-                <label>Tipo de documento:</label>
-                <select name="doctype" id="doctype">
-                    <option value="Documento Nacional de Identidad">Documento Nacional de Identidad</option>
-                    <option value="Docunento de Nacionalidad Extranjera">Documento de Nacionalidad Extranjera</option>
-                    <option value="Documento Pasaporte">Documento Pasaporte</option>
-                    <option value="Documento en trámite">Documento en trámite</option>
-                </select>           
-            </li>
-            <li>
-                <label>Posee obra social:</label>
-                <select name="social-work" id="social-work">
-                    <option value="yes">Si</option>
-                    <option value="no">No</option>
+    <h1>My feedback form</h1>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" required id="email" name="email">
+        </div>
+            
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" required id="password" name="password">
+        </div>
+
+
+        <span>Please check all the emotions that aplly to you:</span>
+        
+        <div>
+            <label for="angry_emotion">Angry</label>
+            <input type="checkbox" checked value="1" id="angry_emotion" name="emotions">
+        </div>
+
+        <div>
+            <label for="sad_emotion">Sad</label>
+            <input type="checkbox" value="2" id="sad_emotion" name="emotions">
+        </div>
+
+        <div>
+            <label for="happy_emotion">Happy</label>
+            <input type="checkbox" value="3" id="happy_emotion" name="emotions">
+        </div>
+
+        <div>
+            <label for="ambivalent_emotion">Ambivalent</label>
+            <input type="checkbox" value="4" id="ambivalent_emotion" name="emotions">
+        </div>
+
+        <span>How satisfied were you with our service?</span>
+
+        <!--para ahorrarte de colocar id y for dentro de input y label (ya que todos los valores tienen que ver con lo mismo name=satisfaction), tenes que colocar el input dentro del label-->
+        <div>
+            <label>
+                Very satisfied
+                <input type="radio" value="1" name="satisfaction">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Satisfied
+                <input type="radio" value="2" name="satisfaction">
+            </label>   
+        </div>
+
+         <div>
+            <label>
+                Didn´t care
+                <input type="radio" value="3" name="satisfaction">
+            </label>   
+        </div>
+
+         <div>
+            <label>
+                Dissatisfied
+                <input type="radio" value="4" name="satisfaction">
+            </label>   
+        </div>
+        
+         <div>
+            <label>
+                Very dissatisfied
+                <input type="radio" value="5" name="satisfaction">
+            </label>   
+        </div>
+
+        <div>
+            <label for="comments">Further comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+        
+        <div>
+            <label for="photo">Bio photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+
+        <div>
+            <label>
+                Location visited:
+                <select name="location">
+                    <option value="" selected disabled>Select location</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Chile</option>
+                    <option value="3">Australia</option>
                 </select>
-            </li>
-            <li>
-                <label>Seleccione turno:</label>     
-                <select id="select-shitf">
-                    <option value="Consulta Oftanmólogo">Consulta Oftanmólogo</option>
-                    <option value="Consulta Pediátra">Consulta Pediátra</option>
-                    <option value="Consulta Opstetra">Consulta Opstetra</option>
-                </select> 
-            </li>
-            <li>
-                <label>Seleccione fecha de turno:</label>
-                <input type="date" name="date">
-            </li>    
-        </ul>
-        <button type="submit">Solicitar turno</button>
-        <section id="ubication">
-            <h2>Nuestra ubicación:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.446257565863!2d-68.69189367987919!3d-32.99200833592921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e6d37b5afd359%3A0x2062155b95601b2b!2sCONSULTORIOS%20DON%20BOSCO!5e0!3m2!1ses!2sar!4v1788013504923!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </section>
-    </div>
+            </label>
+        </div>
+    </form>
+
+    <button type="submit">submit</button>
+
 </body>
 </html>
